@@ -1,6 +1,6 @@
 package com.example.groovyContext;
 
-import com.example.groovyContext.metadata.EvaluationConfig;
+import com.example.groovyContext.metadata.CodeGenConfig;
 import com.github.mustachejava.DefaultMustacheFactory;
 import com.github.mustachejava.Mustache;
 import com.github.mustachejava.MustacheFactory;
@@ -12,7 +12,7 @@ import java.io.StringWriter;
 
 @Slf4j
 public class CodeGenerator {
-    public Class getEvaluationClass(EvaluationConfig config) {
+    public Class getGeneratedClass(CodeGenConfig config) {
         StringWriter writer = new StringWriter();
 
         MustacheFactory mf = new DefaultMustacheFactory();

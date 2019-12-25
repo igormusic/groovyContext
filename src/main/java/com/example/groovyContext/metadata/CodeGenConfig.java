@@ -12,11 +12,11 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @Accessors(fluent = true)
-public class EvaluationConfig {
+public class CodeGenConfig {
     protected List<ExtendableType> types = new ArrayList<>();
     protected List<Function> functions = new ArrayList<>();
 
-    public EvaluationConfig(Context context){
+    public CodeGenConfig(Context context){
         for(String typeName: context.keySet()){
             ExtendableType type = addType(typeName);
             Extendable object = context.get(typeName);

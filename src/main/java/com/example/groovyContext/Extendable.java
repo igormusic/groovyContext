@@ -10,8 +10,9 @@ import java.util.Set;
 public class Extendable {
     private Map<String,Object> properties = new HashMap<>();
 
-    public void put(String key, Object value){
+    public Extendable put(String key, Object value){
         properties.put(key,value);
+        return this;
     }
 
     public Object get(String key){

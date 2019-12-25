@@ -1,5 +1,5 @@
 package com.example.groovyContext;
 
 public interface Contextual {
-    void context(Context context);
+    void setContext(Context context);
 }

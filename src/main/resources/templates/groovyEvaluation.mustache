@@ -8,10 +8,10 @@ class GroovyEvaluation implements Contextual {
 {{/types}}
 
     @Override
-    void context(Context context) {
+    void setContext(Context context) {
         this.context = context
 {{#types}}
-        {{lowerCaseName}}.context(context)
+        {{lowerCaseName}}.setContext(context)
 {{/types}}
     }
 {{#functions}}
@@ -25,7 +25,7 @@ class GroovyEvaluation implements Contextual {
         private Context context
 
         @Override
-        void context(Context context) {
+        void setContext(Context context) {
             this.context = context
         }
     {{#propertyTypes}}
