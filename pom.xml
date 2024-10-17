@@ -16,7 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<groovy.version>2.5.8</groovy.version>
+		<groovy.version>2.5.14</groovy.version>
 		<mustache.version>0.9.6</mustache.version>
 	</properties>
 
